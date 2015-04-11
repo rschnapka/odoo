@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 00:10+0000\n"
-"PO-Revision-Date: 2014-04-21 16:47+0000\n"
+"PO-Revision-Date: 2015-04-11 17:27+0100\n"
 "Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-08-14 06:38+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: de\n"
 
 #. module: account_payment
 #: model:ir.actions.act_window,help:account_payment.action_payment_order_tree
@@ -55,8 +56,7 @@ msgid "Select the Payment Mode to be applied."
 msgstr "Festlelegten Zahlungsmodus wählen"
 
 #. module: account_payment
-#: view:payment.mode:0
-#: view:payment.order:0
+#: view:payment.mode:0 view:payment.order:0
 msgid "Group By..."
 msgstr "Gruppieren nach ..."
 
@@ -66,15 +66,12 @@ msgid "Payment lines"
 msgstr "Zahlungsvorschlag Positionen"
 
 #. module: account_payment
-#: view:payment.line:0
-#: field:payment.line,info_owner:0
-#: view:payment.order:0
+#: view:payment.line:0 field:payment.line,info_owner:0 view:payment.order:0
 msgid "Owner Account"
 msgstr "Inhaber des Bankkontos"
 
 #. module: account_payment
-#: field:payment.line,company_id:0
-#: field:payment.mode,company_id:0
+#: field:payment.line,company_id:0 field:payment.mode,company_id:0
 #: field:payment.order,company_id:0
 msgid "Company"
 msgstr "Unternehmen"
@@ -90,8 +87,7 @@ msgid "Free"
 msgstr "Kostenlos"
 
 #. module: account_payment
-#: view:payment.order.create:0
-#: field:payment.order.create,entries:0
+#: view:payment.order.create:0 field:payment.order.create,entries:0
 msgid "Entries"
 msgstr "Buchungen"
 
@@ -101,8 +97,7 @@ msgid "Used Account"
 msgstr "Verwendetes Konto"
 
 #. module: account_payment
-#: field:payment.line,ml_maturity_date:0
-#: field:payment.order.create,duedate:0
+#: field:payment.line,ml_maturity_date:0 field:payment.order.create,duedate:0
 msgid "Due Date"
 msgstr "Fälligkeitsdatum"
 
@@ -133,11 +128,10 @@ msgstr ""
 #: code:addons/account_payment/account_move_line.py:110
 #, python-format
 msgid "Error!"
-msgstr "Fehler !"
+msgstr "Fehler."
 
 #. module: account_payment
-#: report:payment.order:0
-#: view:payment.order:0
+#: report:payment.order:0 view:payment.order:0
 msgid "Amount"
 msgstr "Betrag"
 
@@ -157,8 +151,7 @@ msgid "New Payment Order"
 msgstr "Neuer Zahlungsvorschlag"
 
 #. module: account_payment
-#: report:payment.order:0
-#: field:payment.order,reference:0
+#: report:payment.order:0 field:payment.order,reference:0
 msgid "Reference"
 msgstr "Referenz"
 
@@ -180,8 +173,7 @@ msgstr "Unmittelbar"
 
 #. module: account_payment
 #: model:ir.actions.act_window,name:account_payment.action_payment_line_form
-#: model:ir.model,name:account_payment.model_payment_line
-#: view:payment.line:0
+#: model:ir.model,name:account_payment.model_payment_line view:payment.line:0
 #: view:payment.order:0
 msgid "Payment Line"
 msgstr "Zahlungsvorschlag Positionen"
@@ -203,8 +195,7 @@ msgstr ""
 " Durch die tatsächliche Freigabe zur Zahlung wechselt er zu 'Erledigt'."
 
 #. module: account_payment
-#: view:payment.order:0
-#: selection:payment.order,state:0
+#: view:payment.order:0 selection:payment.order,state:0
 msgid "Confirmed"
 msgstr "Bestätigt"
 
@@ -229,8 +220,7 @@ msgid "Import Payment Lines"
 msgstr "Import von Zahlungspositionen"
 
 #. module: account_payment
-#: view:payment.line:0
-#: view:payment.order:0
+#: view:payment.line:0 view:payment.order:0
 msgid "Transaction Information"
 msgstr "Information Zahlungsvorgang"
 
@@ -238,9 +228,7 @@ msgstr "Information Zahlungsvorgang"
 #: model:ir.actions.act_window,name:account_payment.action_payment_mode_form
 #: model:ir.model,name:account_payment.model_payment_mode
 #: model:ir.ui.menu,name:account_payment.menu_action_payment_mode_form
-#: view:payment.mode:0
-#: view:payment.order:0
-#: field:payment.order,mode:0
+#: view:payment.mode:0 view:payment.order:0 field:payment.order,mode:0
 msgid "Payment Mode"
 msgstr "Zahlungsart"
 
@@ -279,11 +267,10 @@ msgstr "Bank oder Barkasse Journal für den Zahlungsmodus"
 #. module: account_payment
 #: selection:payment.order,date_prefered:0
 msgid "Fixed date"
-msgstr "Festes Datum"
+msgstr "Fixdatum"
 
 #. module: account_payment
-#: field:payment.line,info_partner:0
-#: view:payment.order:0
+#: field:payment.line,info_partner:0 view:payment.order:0
 msgid "Destination Account"
 msgstr "Konto Zahlungsempfänger"
 
@@ -323,8 +310,7 @@ msgid "Communication Type"
 msgstr "Kommunikationsart"
 
 #. module: account_payment
-#: field:payment.line,partner_id:0
-#: field:payment.mode,partner_id:0
+#: field:payment.line,partner_id:0 field:payment.mode,partner_id:0
 #: report:payment.order:0
 msgid "Partner"
 msgstr "Partner"
@@ -399,14 +385,12 @@ msgid "Payment amount in the partner currency"
 msgstr "Zahlbetrag in Währung des Partners"
 
 #. module: account_payment
-#: view:payment.order:0
-#: selection:payment.order,state:0
+#: view:payment.order:0 selection:payment.order,state:0
 msgid "Draft"
 msgstr "Entwurf"
 
 #. module: account_payment
-#: view:payment.order:0
-#: field:payment.order,state:0
+#: view:payment.order:0 field:payment.order,state:0
 msgid "Status"
 msgstr "Status"
 
@@ -519,14 +503,12 @@ msgid "Payment order"
 msgstr "Zahlungsanweisung"
 
 #. module: account_payment
-#: view:payment.line:0
-#: view:payment.order:0
+#: view:payment.line:0 view:payment.order:0
 msgid "General Information"
 msgstr "Grundinformation"
 
 #. module: account_payment
-#: view:payment.order:0
-#: selection:payment.order,state:0
+#: view:payment.order:0 selection:payment.order,state:0
 msgid "Done"
 msgstr "Erledigt"
 
@@ -542,10 +524,9 @@ msgstr "Betreffzeile"
 
 #. module: account_payment
 #: view:account.payment.make.payment:0
-#: view:account.payment.populate.statement:0
-#: view:payment.order.create:0
+#: view:account.payment.populate.statement:0 view:payment.order.create:0
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "Stornieren"
 
 #. module: account_payment
 #: field:payment.line,bank_id:0
@@ -553,8 +534,7 @@ msgid "Destination Bank Account"
 msgstr "Bankkonto des Empfängers"
 
 #. module: account_payment
-#: view:payment.line:0
-#: view:payment.order:0
+#: view:payment.line:0 view:payment.order:0
 msgid "Information"
 msgstr "Information"
 
@@ -596,8 +576,7 @@ msgid "Are you sure you want to make payment?"
 msgstr "Sind Sie sicher, dass Sie die Zahlung freigeben wollen?"
 
 #. module: account_payment
-#: view:payment.mode:0
-#: field:payment.mode,journal:0
+#: view:payment.mode:0 field:payment.mode,journal:0
 msgid "Journal"
 msgstr "Journal"
 
@@ -612,14 +591,12 @@ msgid "Confirm Payments"
 msgstr "Zahlungsvorschlag bestätigen"
 
 #. module: account_payment
-#: field:payment.line,company_currency:0
-#: report:payment.order:0
+#: field:payment.line,company_currency:0 report:payment.order:0
 msgid "Company Currency"
-msgstr "Betriebl. Währung"
+msgstr "Unternehmenswährung"
 
 #. module: account_payment
-#: model:ir.ui.menu,name:account_payment.menu_main_payment
-#: view:payment.line:0
+#: model:ir.ui.menu,name:account_payment.menu_main_payment view:payment.line:0
 #: view:payment.order:0
 msgid "Payment"
 msgstr "Zahlungsverkehr"
@@ -654,8 +631,7 @@ msgid "Bank Account"
 msgstr "Bankkonto"
 
 #. module: account_payment
-#: view:payment.line:0
-#: view:payment.order:0
+#: view:payment.line:0 view:payment.order:0
 msgid "Entry Information"
 msgstr "Information Zahlungspositionen"
 
@@ -703,8 +679,7 @@ msgstr "Bevorzugtes Datum"
 
 #. module: account_payment
 #: view:account.payment.make.payment:0
-#: view:account.payment.populate.statement:0
-#: view:payment.order.create:0
+#: view:account.payment.populate.statement:0 view:payment.order.create:0
 msgid "or"
 msgstr "oder"
 

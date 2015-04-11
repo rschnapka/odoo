@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 00:10+0000\n"
-"PO-Revision-Date: 2014-01-26 16:25+0000\n"
-"Last-Translator: Ralf Hilgenstock <rh@dialoge.info>\n"
+"PO-Revision-Date: 2015-04-11 17:35+0100\n"
+"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-08-14 06:40+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: de\n"
 
 #. module: analytic
 #: field:account.analytic.account,child_ids:0
@@ -73,8 +74,8 @@ msgid ""
 msgstr ""
 "Sobald das Enddatum des Vertrags überschritten wird oder die maximale Anzahl "
 "von Serviceeinheiten (beispielsweise in einem Support-Vertrag) abgeleistet "
-"wurde, wird der Projektmanager per E-Mail benachrichtigt, um den Vertrag mit "
-" dem Kunden zu erneuern."
+"wurde, wird der Betreuer/Verantwortliche per E-Mail benachrichtigt, um den "
+"Vertrag mit dem Kunden zu erneuern."
 
 #. module: analytic
 #: selection:account.analytic.account,type:0
@@ -106,6 +107,12 @@ msgid ""
 "analytic account of type 'view'. This can be really useful for consolidation "
 "purposes of several companies charts with different currencies, for example."
 msgstr ""
+"Wenn Sie ein Unternehmen festlegen, dann muss die gewählte Währung die "
+"gleiche wie die des Unternehmens sein.\n"
+"Sie können das zugewiesene Unternehmen entfernen und folglich auf "
+"Kostenstellen des Typs 'Sicht' die Währung ändern. Dies kann für "
+"Konsolidierungen von Unternehmen unterschiedlicher Währungen sehr hilfreich "
+"sein."
 
 #. module: analytic
 #: selection:account.analytic.account,state:0
@@ -163,7 +170,7 @@ msgstr "Ungelesene Nachrichten"
 #. module: analytic
 #: constraint:account.analytic.account:0
 msgid "Error! You cannot create recursive analytic accounts."
-msgstr "Fehler ! Sie können keine rekursiven Kostenstellen anlegen."
+msgstr "Fehler! Sie dürfen keine rekursiven Kostenstellen anlegen."
 
 #. module: analytic
 #: field:account.analytic.account,company_id:0
@@ -233,7 +240,7 @@ msgstr "Bedingungen und Konditionen"
 #. module: analytic
 #: field:account.analytic.account,date:0
 msgid "Expiration Date"
-msgstr ""
+msgstr "Ablaufdatum"
 
 #. module: analytic
 #: help:account.analytic.line,amount:0
@@ -269,7 +276,7 @@ msgstr "Nachrichten und Kommunikations-Historie"
 #: constraint:account.analytic.line:0
 msgid "You cannot create analytic line on view account."
 msgstr ""
-"Sie können keine Kostenstellen buchen, die als Ansicht definiert wurde"
+"Sie dürfen keine Kostenstellen anbuchen, die als Ansicht definiert wurde"
 
 #. module: analytic
 #: view:account.analytic.account:0
@@ -381,8 +388,7 @@ msgid "Amount"
 msgstr "Betrag"
 
 #. module: analytic
-#: view:account.analytic.account:0
-#: selection:account.analytic.account,type:0
+#: view:account.analytic.account:0 selection:account.analytic.account,type:0
 #: field:account.analytic.line,account_id:0
 #: model:ir.model,name:analytic.model_account_analytic_account
 msgid "Analytic Account"
@@ -402,7 +408,7 @@ msgstr "Vertrag offen"
 #: code:addons/analytic/analytic.py:262
 #, python-format
 msgid "Warning"
-msgstr "Warnung"
+msgstr "Hinweis"
 
 #. module: analytic
 #: field:account.analytic.account,type:0
@@ -422,18 +428,19 @@ msgstr "Kostenstellenbuchungen"
 #~ msgid "Date End"
 #~ msgstr "Ende Datum"
 
-#, python-format
 #~ msgid ""
 #~ "If you set a company, the currency selected has to be the same as it's "
 #~ "currency. \n"
-#~ "You can remove the company belonging, and thus change the currency, only on "
-#~ "analytic account of type 'view'. This can be really usefull for "
+#~ "You can remove the company belonging, and thus change the currency, only "
+#~ "on analytic account of type 'view'. This can be really usefull for "
 #~ "consolidation purposes of several companies charts with different "
 #~ "currencies, for example."
 #~ msgstr ""
-#~ "Wenn Sie ein Unternehmen definieren, müssen die Währungen übereinstimmen.\n"
+#~ "Wenn Sie ein Unternehmen definieren, müssen die Währungen "
+#~ "übereinstimmen.\n"
 #~ "Sie können die Definition des Unternehmen für Ansichten entfernen.\n"
-#~ "Damit können Sie dann auch verschiedene Firmen mit verschiedenen Währungen \n"
+#~ "Damit können Sie dann auch verschiedene Firmen mit verschiedenen "
+#~ "Währungen \n"
 #~ "konsolidieren."
 
 #~ msgid "Full Account Name"

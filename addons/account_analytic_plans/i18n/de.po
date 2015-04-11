@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 00:10+0000\n"
-"PO-Revision-Date: 2014-01-25 14:48+0000\n"
-"Last-Translator: Ralf Hilgenstock <rh@dialoge.info>\n"
+"PO-Revision-Date: 2015-04-11 16:56+0100\n"
+"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-08-14 06:37+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #. module: account_analytic_plans
 #: field:account.analytic.plan.instance,account4_ids:0
@@ -52,14 +52,13 @@ msgid "The total should be between %s and %s."
 msgstr "Die Summe sollte zwischen %s und %s sein."
 
 #. module: account_analytic_plans
-#: view:account.analytic.plan:0
-#: field:account.analytic.plan,name:0
+#: view:account.analytic.plan:0 field:account.analytic.plan,name:0
 #: field:account.analytic.plan.line,plan_id:0
 #: model:ir.actions.act_window,name:account_analytic_plans.account_analytic_plan_form_action
 #: model:ir.model,name:account_analytic_plans.model_account_analytic_plan
 #: model:ir.ui.menu,name:account_analytic_plans.menu_account_analytic_plan_action
 msgid "Analytic Plan"
-msgstr "Kostenstellenverrechnung"
+msgstr "Kostenstellen-Plan"
 
 #. module: account_analytic_plans
 #: view:analytic.plan.create.model:0
@@ -70,12 +69,12 @@ msgstr "Die Verrechnungsvorlage wurde gesichert und ist nunmehr verwendbar."
 #. module: account_analytic_plans
 #: model:ir.model,name:account_analytic_plans.model_account_analytic_plan_instance_line
 msgid "Analytic Instance Line"
-msgstr "Analyt. Buchungspositionen"
+msgstr "Kostenposition"
 
 #. module: account_analytic_plans
 #: view:account.analytic.plan.instance.line:0
 msgid "Analytic Distribution Lines"
-msgstr "Analyt. Verrechnungspositionen"
+msgstr "Kostenstellenumlagepositionen"
 
 #. module: account_analytic_plans
 #: view:account.crossovered.analytic:0
@@ -95,17 +94,17 @@ msgstr "Plan ID"
 #. module: account_analytic_plans
 #: model:ir.actions.act_window,name:account_analytic_plans.account_analytic_plan_instance_action
 msgid "Analytic Distribution's Models"
-msgstr "Analyt. Verrechnungsvorlagen"
+msgstr "Kostenstellenumlage-Modelle"
 
 #. module: account_analytic_plans
 #: report:account.analytic.account.crossovered.analytic:0
 msgid "Account Name"
-msgstr "Konto Bez."
+msgstr "Kontenbezeichnung"
 
 #. module: account_analytic_plans
 #: view:account.analytic.plan.instance.line:0
 msgid "Analytic Distribution Line"
-msgstr "Analyt. Verrechnungsvorlage"
+msgstr "Kostenstellenumlageposition"
 
 #. module: account_analytic_plans
 #: field:account.analytic.plan.instance,code:0
@@ -145,15 +144,14 @@ msgid "Account3 Id"
 msgstr "Konto3 ID"
 
 #. module: account_analytic_plans
-#: view:account.crossovered.analytic:0
-#: view:analytic.plan.create.model:0
+#: view:account.crossovered.analytic:0 view:analytic.plan.create.model:0
 msgid "or"
 msgstr "oder"
 
 #. module: account_analytic_plans
 #: model:ir.model,name:account_analytic_plans.model_account_analytic_line
 msgid "Analytic Line"
-msgstr "Analyse Zeile"
+msgstr "Kostenposition"
 
 #. module: account_analytic_plans
 #: report:account.analytic.account.crossovered.analytic:0
@@ -168,7 +166,7 @@ msgstr "Währung"
 #. module: account_analytic_plans
 #: report:account.analytic.account.crossovered.analytic:0
 msgid "Analytic Account :"
-msgstr "Analytisches Konto"
+msgstr "Kostenstelle"
 
 #. module: account_analytic_plans
 #: view:analytic.plan.create.model:0
@@ -179,12 +177,12 @@ msgstr "Verrechnung als Vorlage speichern"
 #: view:account.analytic.plan.line:0
 #: model:ir.model,name:account_analytic_plans.model_account_analytic_plan_line
 msgid "Analytic Plan Line"
-msgstr "Analyt. Verrechnungspositionen"
+msgstr "Analyt. Verrechnungsposition"
 
 #. module: account_analytic_plans
 #: report:account.analytic.account.crossovered.analytic:0
 msgid "Analytic Account Reference:"
-msgstr "Analyt. Konto Referenz:"
+msgstr "Kostenstellenreferenz:"
 
 #. module: account_analytic_plans
 #: field:account.analytic.plan.line,name:0
@@ -197,8 +195,7 @@ msgid "Default Entries"
 msgstr "Verrechnungsvorlage"
 
 #. module: account_analytic_plans
-#: view:account.analytic.plan:0
-#: field:account.analytic.plan,plan_ids:0
+#: view:account.analytic.plan:0 field:account.analytic.plan,plan_ids:0
 #: field:account.journal,plan_id:0
 msgid "Analytic Plans"
 msgstr "Analyt. Verrechnung"
@@ -211,7 +208,7 @@ msgstr "Proz(%)"
 #. module: account_analytic_plans
 #: model:ir.model,name:account_analytic_plans.model_account_move_line
 msgid "Journal Items"
-msgstr "Journaleinträge"
+msgstr "Journalposten"
 
 #. module: account_analytic_plans
 #: field:account.analytic.plan.instance,account1_ids:0
@@ -233,7 +230,7 @@ msgstr "analytic.plan.create.model"
 #: view:analytic.plan.create.model:0
 #, python-format
 msgid "Distribution Model Saved"
-msgstr "Verrechnungsvorlage gespeichert"
+msgstr "Verrechnungs-Modell gespeichert"
 
 #. module: account_analytic_plans
 #: model:ir.model,name:account_analytic_plans.model_account_analytic_plan_instance
@@ -243,19 +240,19 @@ msgstr "Analyt. Verrechnungsvorgang"
 #. module: account_analytic_plans
 #: model:ir.actions.act_window,name:account_analytic_plans.account_analytic_instance_model_open
 msgid "Distribution Models"
-msgstr "Verrechnungsvorlage"
+msgstr "Verrechnungs-Modelle"
 
 #. module: account_analytic_plans
 #: code:addons/account_analytic_plans/account_analytic_plans.py:342
 #: code:addons/account_analytic_plans/account_analytic_plans.py:481
 #, python-format
 msgid "No Analytic Journal!"
-msgstr ""
+msgstr "Kein Kostenrechnungs-Journal."
 
 #. module: account_analytic_plans
 #: view:account.analytic.plan.line:0
 msgid "Analytic Plan Lines"
-msgstr "Analyt. Verrechnung Positionen"
+msgstr "Analyt. Verrechnungspositionen"
 
 #. module: account_analytic_plans
 #: field:account.analytic.plan.line,min_required:0
@@ -284,12 +281,12 @@ msgstr "Bankauszug Buchungen"
 #: code:addons/account_analytic_plans/wizard/analytic_plan_create_model.py:41
 #, python-format
 msgid "Error!"
-msgstr "Fehler !"
+msgstr "Fehler!"
 
 #. module: account_analytic_plans
 #: report:account.analytic.account.crossovered.analytic:0
 msgid "Amount"
-msgstr "Wert"
+msgstr "Betrag"
 
 #. module: account_analytic_plans
 #: model:ir.model,name:account_analytic_plans.model_account_crossovered_analytic
@@ -312,7 +309,7 @@ msgstr "Konto6 Id"
 #: view:account.crossovered.analytic:0
 #: field:account.crossovered.analytic,journal_ids:0
 msgid "Analytic Journal"
-msgstr "Kostenstellenjournal"
+msgstr "Kostenrechnungsjournal"
 
 #. module: account_analytic_plans
 #: code:addons/account_analytic_plans/wizard/analytic_plan_create_model.py:38
@@ -329,7 +326,7 @@ msgstr "Menge"
 #. module: account_analytic_plans
 #: model:ir.ui.menu,name:account_analytic_plans.menu_account_analytic_multi_plan_action
 msgid "Multi Plans"
-msgstr "Analytische Verrechnung"
+msgstr "Mehrfach-Verrechnung"
 
 #. module: account_analytic_plans
 #: field:account.analytic.plan.instance,account_ids:0
@@ -371,7 +368,7 @@ msgstr "Sequenz"
 #. module: account_analytic_plans
 #: model:ir.model,name:account_analytic_plans.model_account_invoice_line
 msgid "Invoice Line"
-msgstr "Rechnungszeile"
+msgstr "Rechnungsposition"
 
 #. module: account_analytic_plans
 #: code:addons/account_analytic_plans/wizard/analytic_plan_create_model.py:41
@@ -387,7 +384,7 @@ msgstr "Bankauszug"
 #. module: account_analytic_plans
 #: field:account.analytic.plan.instance.line,analytic_account_id:0
 msgid "Analytic Account"
-msgstr "Kostenstellenkonto"
+msgstr "Kostenstelle"
 
 #. module: account_analytic_plans
 #: field:account.analytic.default,analytics_id:0
@@ -398,13 +395,13 @@ msgstr "Kostenstellenkonto"
 #: field:account.move.line,analytics_id:0
 #: model:ir.model,name:account_analytic_plans.model_account_analytic_default
 msgid "Analytic Distribution"
-msgstr "Analytische Verrechnung"
+msgstr "Kostenstellenumlage"
 
 #. module: account_analytic_plans
 #: code:addons/account_analytic_plans/account_analytic_plans.py:221
 #, python-format
 msgid "A model with this name and code already exists."
-msgstr "Ein Modul mit ähnlichem Name und Kürzel existiert bereits."
+msgstr "Ein Modul mit diesem Namen und Kürzel existiert bereits."
 
 #. module: account_analytic_plans
 #: help:account.analytic.plan.line,root_analytic_id:0
@@ -414,7 +411,7 @@ msgstr "Basiskonto der Verrechnung"
 #. module: account_analytic_plans
 #: field:account.crossovered.analytic,ref:0
 msgid "Analytic Account Reference"
-msgstr "Analyt. Kontenreferenz"
+msgstr "Kostenstellenreferenz"
 
 #. module: account_analytic_plans
 #: model:ir.model,name:account_analytic_plans.model_account_invoice
@@ -422,10 +419,9 @@ msgid "Invoice"
 msgstr "Rechnung"
 
 #. module: account_analytic_plans
-#: view:account.crossovered.analytic:0
-#: view:analytic.plan.create.model:0
+#: view:account.crossovered.analytic:0 view:analytic.plan.create.model:0
 msgid "Cancel"
-msgstr "Abbruch"
+msgstr "Storno"
 
 #. module: account_analytic_plans
 #: field:account.crossovered.analytic,date1:0
@@ -452,6 +448,5 @@ msgstr "Auftragsposition"
 msgid "From Date"
 msgstr "Von Datum"
 
-#, python-format
 #~ msgid "No Analytic Journal !"
 #~ msgstr "Kein Kostenstellen-Journal"

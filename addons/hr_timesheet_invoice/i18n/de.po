@@ -8,19 +8,18 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 00:10+0000\n"
-"PO-Revision-Date: 2013-01-06 21:11+0000\n"
-"Last-Translator: Thorsten Vocks (OpenBig.org) <thorsten.vocks@big-"
-"consulting.net>\n"
+"PO-Revision-Date: 2015-04-11 18:22+0100\n"
+"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-08-14 06:58+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: de\n"
 
 #. module: hr_timesheet_invoice
-#: view:report.timesheet.line:0
-#: view:report_timesheet.user:0
+#: view:report.timesheet.line:0 view:report_timesheet.user:0
 msgid "Timesheet by user"
 msgstr "Zeiterfassung nach Benutzer"
 
@@ -122,8 +121,7 @@ msgid "Display time in the history of works"
 msgstr "Anzeige der Zeit in der Liste erledigter Aufgaben"
 
 #. module: hr_timesheet_invoice
-#: view:report.timesheet.line:0
-#: field:report.timesheet.line,day:0
+#: view:report.timesheet.line:0 field:report.timesheet.line,day:0
 msgid "Day"
 msgstr "Tag"
 
@@ -340,8 +338,7 @@ msgid "Timesheet by User"
 msgstr "Zeiterfassung nach Benutzer"
 
 #. module: hr_timesheet_invoice
-#: view:account.analytic.line:0
-#: view:hr.analytic.timesheet:0
+#: view:account.analytic.line:0 view:hr.analytic.timesheet:0
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_acc_analytic_acc_2_report_acc_analytic_line_to_invoice
 msgid "To Invoice"
 msgstr "Abrechenbar"
@@ -454,8 +451,7 @@ msgstr "Vertrag abrechnen"
 
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,month:0
-#: view:report.timesheet.line:0
-#: field:report.timesheet.line,month:0
+#: view:report.timesheet.line:0 field:report.timesheet.line,month:0
 #: field:report_timesheet.account,month:0
 #: field:report_timesheet.account.date,month:0
 #: field:report_timesheet.user,month:0
@@ -473,8 +469,7 @@ msgid "Non Assigned timesheets to users"
 msgstr "Keine zugewiesene Zeiterfassung bei Benutzern"
 
 #. module: hr_timesheet_invoice
-#: view:account.analytic.line:0
-#: view:hr.analytic.timesheet:0
+#: view:account.analytic.line:0 view:hr.analytic.timesheet:0
 #: field:report.timesheet.line,invoice_id:0
 msgid "Invoiced"
 msgstr "Abgerechnet"
@@ -490,8 +485,7 @@ msgid "Invoice rate by user"
 msgstr "Abrechnungsquote nach Benutzern"
 
 #. module: hr_timesheet_invoice
-#: view:report_timesheet.account:0
-#: view:report_timesheet.account.date:0
+#: view:report_timesheet.account:0 view:report_timesheet.account.date:0
 msgid "Timesheet by account"
 msgstr "Zeiterfassung nach Konto"
 
@@ -585,8 +579,7 @@ msgstr "Gewinn in %"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.analytic.profit,employee_ids:0
-#: view:report.timesheet.line:0
-#: field:report.timesheet.line,user_id:0
+#: view:report.timesheet.line:0 field:report.timesheet.line,user_id:0
 #: field:report_timesheet.account,user_id:0
 #: field:report_timesheet.account.date,user_id:0
 #: field:report_timesheet.invoice,user_id:0
@@ -598,7 +591,7 @@ msgstr "Benutzer"
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:188
 #, python-format
 msgid "Analytic Account Incomplete!"
-msgstr ""
+msgstr "Kostenstellenfestlegung unvollständig."
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -645,8 +638,7 @@ msgid "Balance"
 msgstr "Saldo"
 
 #. module: hr_timesheet_invoice
-#: field:report.analytic.account.close,quantity:0
-#: view:report.timesheet.line:0
+#: field:report.analytic.account.close,quantity:0 view:report.timesheet.line:0
 msgid "Quantity"
 msgstr "Menge"
 
@@ -707,8 +699,7 @@ msgid "Invoice"
 msgstr "Rechnung"
 
 #. module: hr_timesheet_invoice
-#: view:hr.timesheet.analytic.profit:0
-#: view:hr.timesheet.invoice.create:0
+#: view:hr.timesheet.analytic.profit:0 view:hr.timesheet.invoice.create:0
 #: view:hr.timesheet.invoice.create.final:0
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -742,8 +733,7 @@ msgid "Do you want to show details of work in invoice?"
 msgstr "Möchten Sie die Aufgabendetails auf der Rechnung ausgeben?"
 
 #. module: hr_timesheet_invoice
-#: view:hr.timesheet.invoice.create:0
-#: view:hr.timesheet.invoice.create.final:0
+#: view:hr.timesheet.invoice.create:0 view:hr.timesheet.invoice.create.final:0
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_timesheet_invoice_create
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_timesheet_invoice_create_final
 msgid "Create Invoice"
@@ -772,8 +762,7 @@ msgstr "Abrechenbare Zeiterfassungen"
 #. module: hr_timesheet_invoice
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:189
 #, python-format
-msgid ""
-"Contract incomplete. Please fill in the Customer and Pricelist fields."
+msgid "Contract incomplete. Please fill in the Customer and Pricelist fields."
 msgstr ""
 "Der Vertrag ist unvollständig. Bitte füllen Sie die Kunden und "
 "Preislistenfelder aus."
@@ -786,8 +775,7 @@ msgstr "Tägliche Zeiterfassung nach Konto"
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create.final,product:0
 #: field:report.account.analytic.line.to.invoice,product_id:0
-#: view:report.timesheet.line:0
-#: field:report.timesheet.line,product_id:0
+#: view:report.timesheet.line:0 field:report.timesheet.line,product_id:0
 msgid "Product"
 msgstr "Produkt"
 
@@ -910,6 +898,10 @@ msgid ""
 "You can use the following field to enforce the use of a single product for "
 "all the chosen lines in the future invoices."
 msgstr ""
+"Beim Weiterbelasten von Kosten, wird der Betrag der Rechnungsposition durch "
+"den Verkaufspreis des korrespondierenden Produkts (sofern gegeben und "
+"Verkaufspreis nicht 0). Sie können das folgende Feld nutzen, um die Nutzung "
+"eines bestimmten Produkts in künftigen Rechnungen vorzugeben."
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,name:0
@@ -934,8 +926,7 @@ msgid "80%"
 msgstr "80 %"
 
 #. module: hr_timesheet_invoice
-#: view:hr.timesheet.analytic.profit:0
-#: view:hr.timesheet.invoice.create:0
+#: view:hr.timesheet.analytic.profit:0 view:hr.timesheet.invoice.create:0
 #: view:hr.timesheet.invoice.create.final:0
 msgid "or"
 msgstr "oder"
@@ -946,19 +937,16 @@ msgid "Manager"
 msgstr "Manager"
 
 #. module: hr_timesheet_invoice
-#: report:account.analytic.profit:0
-#: field:hr.timesheet.invoice.create,price:0
+#: report:account.analytic.profit:0 field:hr.timesheet.invoice.create,price:0
 #: field:hr.timesheet.invoice.create.final,price:0
-#: view:report.timesheet.line:0
-#: field:report.timesheet.line,cost:0
+#: view:report.timesheet.line:0 field:report.timesheet.line,cost:0
 #: field:report_timesheet.user,cost:0
 msgid "Cost"
 msgstr "Kosten"
 
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,name:0
-#: view:report.timesheet.line:0
-#: field:report.timesheet.line,name:0
+#: view:report.timesheet.line:0 field:report.timesheet.line,name:0
 #: field:report_timesheet.account,name:0
 #: field:report_timesheet.account.date,name:0
 #: field:report_timesheet.user,name:0
@@ -970,14 +958,12 @@ msgstr "Jahr"
 msgid "Duration"
 msgstr "Dauer"
 
-#, python-format
 #~ msgid ""
-#~ "There is no product defined. Please select one or force the product through "
-#~ "the wizard."
+#~ "There is no product defined. Please select one or force the product "
+#~ "through the wizard."
 #~ msgstr ""
-#~ "Es ist kein Produkt definiert, bitte wählen Sie eins aus oder definieren Sie "
-#~ "ein Neues durch den Assistenten."
+#~ "Es ist kein Produkt definiert, bitte wählen Sie eins aus oder definieren "
+#~ "Sie ein Neues durch den Assistenten."
 
-#, python-format
 #~ msgid "Analytic Account incomplete !"
 #~ msgstr "Die Kostenstelle ist unvollständig!"

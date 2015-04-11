@@ -128,96 +128,6 @@ def _links_get(self, cr, uid, context=None):
     res = obj.read(cr, uid, ids, ['object', 'name'], context=context)
     return [(r['object'], r['name']) for r in res]
 
-html_invitation = """
-<html>
-<head>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<title>%(name)s</title>
-</head>
-<body>
-<table border="0" cellspacing="10" cellpadding="0" width="100%%"
-    style="font-family: Arial, Sans-serif; font-size: 14">
-    <tr>
-        <td width="100%%">Hello,</td>
-    </tr>
-    <tr>
-        <td width="100%%">You are invited for <i>%(company)s</i> Event.</td>
-    </tr>
-    <tr>
-        <td width="100%%">Below are the details of event. Hours and dates expressed in %(timezone)s time.</td>
-    </tr>
-</table>
-
-<table cellspacing="0" cellpadding="5" border="0" summary=""
-    style="width: 90%%; font-family: Arial, Sans-serif; border: 1px Solid #ccc; background-color: #f6f6f6">
-    <tr valign="center" align="center">
-        <td bgcolor="DFDFDF">
-        <h3>%(name)s</h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        <table cellpadding="8" cellspacing="0" border="0"
-            style="font-size: 14" summary="Eventdetails" bgcolor="f6f6f6"
-            width="90%%">
-            <tr>
-                <td width="21%%">
-                <div><b>Start Date</b></div>
-                </td>
-                <td><b>:</b></td>
-                <td>%(start_date)s</td>
-                <td width="15%%">
-                <div><b>End Date</b></div>
-                </td>
-                <td><b>:</b></td>
-                <td width="25%%">%(end_date)s</td>
-            </tr>
-            <tr valign="top">
-                <td><b>Description</b></td>
-                <td><b>:</b></td>
-                <td colspan="3">%(description)s</td>
-            </tr>
-            <tr valign="top">
-                <td>
-                <div><b>Location</b></div>
-                </td>
-                <td><b>:</b></td>
-                <td colspan="3">%(location)s</td>
-            </tr>
-            <tr valign="top">
-                <td>
-                <div><b>Event Attendees</b></div>
-                </td>
-                <td><b>:</b></td>
-                <td colspan="3">
-                <div>
-                <div>%(attendees)s</div>
-                </div>
-                </td>
-            </tr>
-        </table>
-        </td>
-    </tr>
-</table>
-<table border="0" cellspacing="10" cellpadding="0" width="100%%"
-    style="font-family: Arial, Sans-serif; font-size: 14">
-    <tr>
-        <td width="100%%">From:</td>
-    </tr>
-    <tr>
-        <td width="100%%">%(user)s</td>
-    </tr>
-    <tr valign="top">
-        <td width="100%%">-<font color="a7a7a7">-------------------------</font></td>
-    </tr>
-    <tr>
-        <td width="100%%"> <font color="a7a7a7">%(sign)s</font></td>
-    </tr>
-</table>
-</body>
-</html>
-"""
-
 class calendar_attendee(osv.osv):
     """
     Calendar Attendee Information
@@ -533,6 +443,95 @@ property or property parameter."),
                             'sign': sign,
                             'company': company
                 }
+                html_invitation = """<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>%(name)s</title>
+</head>
+<body>
+<table border="0" cellspacing="10" cellpadding="0" width="100%%"
+    style="font-family: Arial, Sans-serif; font-size: 14">
+    <tr>
+        <td width="100%%">""" + _('Hello,') + """</td>
+    </tr>
+    <tr>
+        <td width="100%%">""" + _('You are invited for <i>%(company)s</i> Event.') + """</td>
+    </tr>
+    <tr>
+        <td width="100%%">""" + _('Below are the details of event. Hours and dates expressed in %(timezone)s time.') + """</td>
+    </tr>
+</table>
+
+<table cellspacing="0" cellpadding="5" border="0" summary=""
+    style="width: 90%%; font-family: Arial, Sans-serif; border: 1px Solid #ccc; background-color: #f6f6f6">
+    <tr valign="center" align="center">
+        <td bgcolor="DFDFDF">
+        <h3>%(name)s</h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <table cellpadding="8" cellspacing="0" border="0"
+            style="font-size: 14" summary="Eventdetails" bgcolor="f6f6f6"
+            width="90%%">
+            <tr>
+                <td width="21%%">
+                <div><b>""" + _('Start Date') + """</b></div>
+                </td>
+                <td><b>:</b></td>
+                <td>%(start_date)s</td>
+                <td width="15%%">
+                <div><b>""" + _('End Date') + """</b></div>
+                </td>
+                <td><b>:</b></td>
+                <td width="25%%">%(end_date)s</td>
+            </tr>
+            <tr valign="top">
+                <td><b>""" + _('Description') + """</b></td>
+                <td><b>:</b></td>
+                <td colspan="3">%(description)s</td>
+            </tr>
+            <tr valign="top">
+                <td>
+                <div><b>""" + _('Location') + """</b></div>
+                </td>
+                <td><b>:</b></td>
+                <td colspan="3">%(location)s</td>
+            </tr>
+            <tr valign="top">
+                <td>
+                <div><b>""" + _('Event Attendees') + """</b></div>
+                </td>
+                <td><b>:</b></td>
+                <td colspan="3">
+                <div>
+                <div>%(attendees)s</div>
+                </div>
+                </td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+<table border="0" cellspacing="10" cellpadding="0" width="100%%"
+    style="font-family: Arial, Sans-serif; font-size: 14">
+    <tr>
+        <td width="100%%">""" + _('From:') + """</td>
+    </tr>
+    <tr>
+        <td width="100%%">%(user)s</td>
+    </tr>
+    <tr valign="top">
+        <td width="100%%">-<font color="a7a7a7">-------------------------</font></td>
+    </tr>
+    <tr>
+        <td width="100%%"> <font color="a7a7a7">%(sign)s</font></td>
+    </tr>
+</table>
+</body>
+</html>
+"""
+
                 body = html_invitation % body_vals
                 if mail_to and email_from:
                     ics_file = self.get_ics_file(cr, uid, res_obj, context=context)

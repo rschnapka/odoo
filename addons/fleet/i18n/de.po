@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 00:11+0000\n"
-"PO-Revision-Date: 2014-06-22 19:57+0000\n"
-"Last-Translator: Ralf Hilgenstock <rh@dialoge.info>\n"
+"PO-Revision-Date: 2015-04-11 18:06+0100\n"
+"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-08-14 06:52+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: de\n"
 
 #. module: fleet
 #: selection:fleet.vehicle,fuel_type:0
@@ -38,8 +39,7 @@ msgid "Unique number written on the vehicle motor (VIN/SN number)"
 msgstr "Fahrgestellnummer"
 
 #. module: fleet
-#: selection:fleet.service.type,category:0
-#: view:fleet.vehicle.log.contract:0
+#: selection:fleet.service.type,category:0 view:fleet.vehicle.log.contract:0
 #: view:fleet.vehicle.log.services:0
 msgid "Service"
 msgstr "Service"
@@ -82,10 +82,8 @@ msgid "Resurface Rotors"
 msgstr "Bremsscheiben (Ersatz)"
 
 #. module: fleet
-#: view:fleet.vehicle.cost:0
-#: view:fleet.vehicle.log.fuel:0
-#: view:fleet.vehicle.model:0
-#: view:fleet.vehicle.odometer:0
+#: view:fleet.vehicle.cost:0 view:fleet.vehicle.log.fuel:0
+#: view:fleet.vehicle.model:0 view:fleet.vehicle.odometer:0
 msgid "Group By..."
 msgstr "Gruppierung ..."
 
@@ -208,21 +206,18 @@ msgid "Head Gasket(s) Replacement"
 msgstr "Abgasanlage (Ersatz)"
 
 #. module: fleet
-#: view:fleet.vehicle:0
-#: selection:fleet.vehicle.cost,cost_type:0
+#: view:fleet.vehicle:0 selection:fleet.vehicle.cost,cost_type:0
 msgid "Services"
 msgstr "Services"
 
 #. module: fleet
-#: help:fleet.vehicle,odometer:0
-#: help:fleet.vehicle.cost,odometer:0
+#: help:fleet.vehicle,odometer:0 help:fleet.vehicle.cost,odometer:0
 #: help:fleet.vehicle.cost,odometer_id:0
 msgid "Odometer measure of the vehicle at the moment of this log"
 msgstr "Kilometerstand zum Zeitpunkt des Protokolls"
 
 #. module: fleet
-#: view:fleet.vehicle.log.contract:0
-#: field:fleet.vehicle.log.contract,notes:0
+#: view:fleet.vehicle.log.contract:0 field:fleet.vehicle.log.contract,notes:0
 msgid "Terms and Conditions"
 msgstr "Bedingungen und Konditionen"
 
@@ -279,14 +274,11 @@ msgstr "Kalkulation mit Gewinnspanne"
 msgid ""
 "Date when the coverage of the contract expirates (by default, one year after "
 "begin date)"
-msgstr ""
-"Ablaufdatum des Vertrags (Standardwert: ein Jahr nach dem Startdatum)"
+msgstr "Ablaufdatum des Vertrags (Standardwert: ein Jahr nach dem Startdatum)"
 
 #. module: fleet
-#: view:fleet.vehicle.log.fuel:0
-#: field:fleet.vehicle.log.fuel,notes:0
-#: view:fleet.vehicle.log.services:0
-#: field:fleet.vehicle.log.services,notes:0
+#: view:fleet.vehicle.log.fuel:0 field:fleet.vehicle.log.fuel,notes:0
+#: view:fleet.vehicle.log.services:0 field:fleet.vehicle.log.services,notes:0
 msgid "Notes"
 msgstr "Bemerkungen"
 
@@ -356,7 +348,7 @@ msgstr "Wählen Sie aus, ob der Vertrag noch gültig ist"
 #. module: fleet
 #: selection:fleet.vehicle,transmission:0
 msgid "Automatic"
-msgstr "Automatisch"
+msgstr "Automatik"
 
 #. module: fleet
 #: help:fleet.vehicle,message_unread:0
@@ -395,8 +387,7 @@ msgid "Transmission Used by the vehicle"
 msgstr "Fahrzeuggetriebe"
 
 #. module: fleet
-#: code:addons/fleet/fleet.py:740
-#: view:fleet.vehicle.log.contract:0
+#: code:addons/fleet/fleet.py:740 view:fleet.vehicle.log.contract:0
 #: model:ir.actions.act_window,name:fleet.act_renew_contract
 #, python-format
 msgid "Renew Contract"
@@ -495,11 +486,11 @@ msgstr "Tankprotokolle der Fahrzeuge"
 #. module: fleet
 #: view:fleet.vehicle.model.brand:0
 msgid ""
-"$('.oe_picture').load(function() { if($(this).width() > $(this).height()) { "
-"$(this).addClass('oe_employee_picture_wide') } });"
+"$('.oe_picture').load(function() { if($(this).width() > $(this).height()) "
+"{ $(this).addClass('oe_employee_picture_wide') } });"
 msgstr ""
-"$('.oe_picture').load(function() { if($(this).width() > $(this).height()) { "
-"$(this).addClass('oe_employee_picture_wide') } });"
+"$('.oe_picture').load(function() { if($(this).width() > $(this).height()) "
+"{ $(this).addClass('oe_employee_picture_wide') } });"
 
 #. module: fleet
 #: view:board.board:0
@@ -618,7 +609,7 @@ msgstr "Fahrer des Fahrzeugs"
 #. module: fleet
 #: view:fleet.vehicle.odometer:0
 msgid "Vehicles odometers"
-msgstr ""
+msgstr "Fahrzeug km-Stand"
 
 #. module: fleet
 #: model:fleet.service.type,name:fleet.type_service_refueling
@@ -723,17 +714,14 @@ msgstr ""
 "            "
 
 #. module: fleet
-#: view:fleet.vehicle:0
-#: field:fleet.vehicle,log_fuel:0
+#: view:fleet.vehicle:0 field:fleet.vehicle,log_fuel:0
 #: view:fleet.vehicle.log.fuel:0
 msgid "Fuel Logs"
 msgstr "Treibstoffverbrauchs-Protokolle"
 
 #. module: fleet
-#: code:addons/fleet/fleet.py:409
-#: code:addons/fleet/fleet.py:413
-#: code:addons/fleet/fleet.py:417
-#: code:addons/fleet/fleet.py:420
+#: code:addons/fleet/fleet.py:409 code:addons/fleet/fleet.py:413
+#: code:addons/fleet/fleet.py:417 code:addons/fleet/fleet.py:420
 #, python-format
 msgid "None"
 msgstr "Keine"
@@ -818,8 +806,7 @@ msgid "Date when the cost has been executed"
 msgstr "Datum, an dem die Kosten entstanden sind"
 
 #. module: fleet
-#: view:fleet.vehicle.cost:0
-#: view:fleet.vehicle.model:0
+#: view:fleet.vehicle.cost:0 view:fleet.vehicle.model:0
 msgid "Vehicles costs"
 msgstr "Betriebskosten (Fahrzeug)"
 
@@ -864,14 +851,12 @@ msgid "Other Maintenance"
 msgstr "Weitere Wartung"
 
 #. module: fleet
-#: view:fleet.vehicle.cost:0
-#: field:fleet.vehicle.cost,parent_id:0
+#: view:fleet.vehicle.cost:0 field:fleet.vehicle.cost,parent_id:0
 msgid "Parent"
 msgstr "Vorgänger"
 
 #. module: fleet
-#: field:fleet.vehicle,state_id:0
-#: view:fleet.vehicle.state:0
+#: field:fleet.vehicle,state_id:0 view:fleet.vehicle.state:0
 msgid "State"
 msgstr "Status"
 
@@ -971,10 +956,8 @@ msgid "Horsepower"
 msgstr "PS"
 
 #. module: fleet
-#: field:fleet.vehicle,image:0
-#: field:fleet.vehicle,image_medium:0
-#: field:fleet.vehicle,image_small:0
-#: field:fleet.vehicle.model,image:0
+#: field:fleet.vehicle,image:0 field:fleet.vehicle,image_medium:0
+#: field:fleet.vehicle,image_small:0 field:fleet.vehicle.model,image:0
 #: field:fleet.vehicle.model,image_medium:0
 #: field:fleet.vehicle.model,image_small:0
 #: field:fleet.vehicle.model.brand,image:0
@@ -987,8 +970,7 @@ msgid "Horsepower Taxation"
 msgstr "Fahrzeugsteuer"
 
 #. module: fleet
-#: field:fleet.vehicle,log_services:0
-#: view:fleet.vehicle.log.services:0
+#: field:fleet.vehicle,log_services:0 view:fleet.vehicle.log.services:0
 msgid "Services Logs"
 msgstr "Serviceprotokolle"
 
@@ -1032,8 +1014,7 @@ msgid "All vehicles"
 msgstr "Alle Fahrzeuge"
 
 #. module: fleet
-#: view:fleet.vehicle.log.fuel:0
-#: view:fleet.vehicle.log.services:0
+#: view:fleet.vehicle.log.fuel:0 view:fleet.vehicle.log.services:0
 msgid "Additional Details"
 msgstr "Zusätzliche Details"
 
@@ -1129,8 +1110,7 @@ msgid "Tags"
 msgstr "Schlagwörter"
 
 #. module: fleet
-#: view:fleet.vehicle:0
-#: field:fleet.vehicle,log_contracts:0
+#: view:fleet.vehicle:0 field:fleet.vehicle,log_contracts:0
 msgid "Contracts"
 msgstr "Verträge"
 
@@ -1140,8 +1120,7 @@ msgid "Brake Pad(s) Replacement"
 msgstr "Bremsbeläge (Ersatz)"
 
 #. module: fleet
-#: view:fleet.vehicle.log.fuel:0
-#: view:fleet.vehicle.log.services:0
+#: view:fleet.vehicle.log.fuel:0 view:fleet.vehicle.log.services:0
 msgid "Odometer Details"
 msgstr "Tachometer-Details"
 
@@ -1381,8 +1360,7 @@ msgid "Battery Replacement"
 msgstr "Ersatzbatterie"
 
 #. module: fleet
-#: view:fleet.vehicle.cost:0
-#: field:fleet.vehicle.cost,date:0
+#: view:fleet.vehicle.cost:0 field:fleet.vehicle.cost,date:0
 #: field:fleet.vehicle.odometer,date:0
 msgid "Date"
 msgstr "Datum"
@@ -1494,8 +1472,7 @@ msgid "Tax roll"
 msgstr "Steuerabrechnung"
 
 #. module: fleet
-#: view:fleet.vehicle.model:0
-#: field:fleet.vehicle.model,vendors:0
+#: view:fleet.vehicle.model:0 field:fleet.vehicle.model,vendors:0
 msgid "Vendors"
 msgstr "Fahrzeughändler"
 
@@ -1521,8 +1498,7 @@ msgid "Weekly"
 msgstr "Wöchentlich"
 
 #. module: fleet
-#: view:fleet.vehicle:0
-#: view:fleet.vehicle.odometer:0
+#: view:fleet.vehicle:0 view:fleet.vehicle.odometer:0
 msgid "Odometer Logs"
 msgstr "Fahrtenbücher"
 
@@ -1588,8 +1564,7 @@ msgid "Indicative Cost"
 msgstr "Kalkulatorische Kosten"
 
 #. module: fleet
-#: field:fleet.vehicle.model,brand_id:0
-#: view:fleet.vehicle.model.brand:0
+#: field:fleet.vehicle.model,brand_id:0 view:fleet.vehicle.model.brand:0
 msgid "Model Brand"
 msgstr "Fahrzeugmarke"
 
@@ -1769,31 +1744,25 @@ msgid "Vehicle %s has been added to the fleet!"
 msgstr "Fahrzeug %s wurde in Flotte ergänzt!"
 
 #. module: fleet
-#: view:fleet.vehicle.log.contract:0
-#: view:fleet.vehicle.log.fuel:0
+#: view:fleet.vehicle.log.contract:0 view:fleet.vehicle.log.fuel:0
 #: view:fleet.vehicle.log.services:0
 msgid "Price"
 msgstr "Preis"
 
 #. module: fleet
-#: field:fleet.vehicle.cost,odometer:0
-#: field:fleet.vehicle.odometer,value:0
+#: field:fleet.vehicle.cost,odometer:0 field:fleet.vehicle.odometer,value:0
 msgid "Odometer Value"
 msgstr "Kilometerstand"
 
 #. module: fleet
-#: view:fleet.vehicle:0
-#: view:fleet.vehicle.cost:0
-#: field:fleet.vehicle.cost,vehicle_id:0
-#: view:fleet.vehicle.log.fuel:0
-#: view:fleet.vehicle.odometer:0
-#: field:fleet.vehicle.odometer,vehicle_id:0
+#: view:fleet.vehicle:0 view:fleet.vehicle.cost:0
+#: field:fleet.vehicle.cost,vehicle_id:0 view:fleet.vehicle.log.fuel:0
+#: view:fleet.vehicle.odometer:0 field:fleet.vehicle.odometer,vehicle_id:0
 msgid "Vehicle"
 msgstr "Fahrzeug"
 
 #. module: fleet
-#: field:fleet.vehicle.cost,cost_ids:0
-#: view:fleet.vehicle.log.contract:0
+#: field:fleet.vehicle.cost,cost_ids:0 view:fleet.vehicle.log.contract:0
 #: view:fleet.vehicle.log.services:0
 msgid "Included Services"
 msgstr "Enthaltener Serviceumfang"
@@ -1858,14 +1827,10 @@ msgid "Contract Reference"
 msgstr "Vertragsreferenz"
 
 #. module: fleet
-#: field:fleet.service.type,name:0
-#: field:fleet.vehicle,name:0
-#: field:fleet.vehicle.cost,name:0
-#: field:fleet.vehicle.log.contract,name:0
-#: field:fleet.vehicle.model,name:0
-#: field:fleet.vehicle.odometer,name:0
-#: field:fleet.vehicle.state,name:0
-#: field:fleet.vehicle.tag,name:0
+#: field:fleet.service.type,name:0 field:fleet.vehicle,name:0
+#: field:fleet.vehicle.cost,name:0 field:fleet.vehicle.log.contract,name:0
+#: field:fleet.vehicle.model,name:0 field:fleet.vehicle.odometer,name:0
+#: field:fleet.vehicle.state,name:0 field:fleet.vehicle.tag,name:0
 msgid "Name"
 msgstr "Bezeichnung"
 
@@ -1938,8 +1903,7 @@ msgid "Contracts Costs by Month"
 msgstr "Verträge je Monat"
 
 #. module: fleet
-#: field:fleet.vehicle,model_id:0
-#: view:fleet.vehicle.model:0
+#: field:fleet.vehicle,model_id:0 view:fleet.vehicle.model:0
 msgid "Model"
 msgstr "Modell"
 
@@ -2046,8 +2010,7 @@ msgid "Starter Replacement"
 msgstr "Anlasser (Ersatz)"
 
 #. module: fleet
-#: view:fleet.vehicle.cost:0
-#: field:fleet.vehicle.cost,year:0
+#: view:fleet.vehicle.cost:0 field:fleet.vehicle.cost,year:0
 msgid "Year"
 msgstr "Jahr"
 
@@ -2073,8 +2036,7 @@ msgstr "Gesamt"
 
 #. module: fleet
 #: help:fleet.service.type,category:0
-msgid ""
-"Choose wheter the service refer to contracts, vehicle services or both"
+msgid "Choose wheter the service refer to contracts, vehicle services or both"
 msgstr ""
 "Wählen Sie aus, ob sich dieser Wartungsservice auf Vertragsservice, "
 "Fahrzeugservices oder beides bezieht"
@@ -2091,7 +2053,8 @@ msgstr "Wird zur Sortierung von Auftragsstatus eingesetzt"
 
 #~ msgid ""
 #~ "<p>\n"
-#~ "                Here you can add various odometer entries for all vehicles.\n"
+#~ "                Here you can add various odometer entries for all "
+#~ "vehicles.\n"
 #~ "                You can also show odometer value for a particular vehicle "
 #~ "using\n"
 #~ "                the search field.\n"

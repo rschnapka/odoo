@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-14 00:10+0000\n"
-"PO-Revision-Date: 2014-08-14 00:10+0000\n"
+"POT-Creation-Date: 2015-02-28 08:59+0000\n"
+"PO-Revision-Date: 2015-02-28 08:59+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -44,6 +44,9 @@ msgstr ""
 #: field:calendar.event,we:0
 #: field:calendar.todo,we:0
 #: field:crm.meeting,we:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_we
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_we
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_we
 msgid "Wed"
 msgstr ""
 
@@ -78,7 +81,14 @@ msgid "Sunday"
 msgstr ""
 
 #. module: base_calendar
+#: code:addons/base_calendar/base_calendar.py:458
+#, python-format
+msgid "You are invited for <i>%(company)s</i> Event."
+msgstr ""
+
+#. module: base_calendar
 #: field:calendar.attendee,role:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_role
 msgid "Role"
 msgstr ""
 
@@ -102,6 +112,9 @@ msgstr ""
 #: selection:calendar.todo,select1:0
 #: field:crm.meeting,day:0
 #: selection:crm.meeting,select1:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_day
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_day
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_day
 msgid "Date of month"
 msgstr ""
 
@@ -133,6 +146,7 @@ msgstr ""
 #. module: base_calendar
 #: view:crm.meeting:0
 #: field:crm.meeting,message_unread:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_message_unread
 msgid "Unread Messages"
 msgstr ""
 
@@ -147,6 +161,9 @@ msgstr ""
 #: field:calendar.event,allday:0
 #: field:calendar.todo,allday:0
 #: field:crm.meeting,allday:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_allday
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_allday
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_allday
 msgid "All Day"
 msgstr ""
 
@@ -154,6 +171,9 @@ msgstr ""
 #: field:calendar.event,vtimezone:0
 #: field:calendar.todo,vtimezone:0
 #: field:crm.meeting,vtimezone:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_vtimezone
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_vtimezone
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_vtimezone
 msgid "Timezone"
 msgstr ""
 
@@ -177,6 +197,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,alarm_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_alarm_id
 msgid "Basic Alarm"
 msgstr ""
 
@@ -187,6 +208,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,ref:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_ref
 msgid "Event Ref"
 msgstr ""
 
@@ -194,6 +216,9 @@ msgstr ""
 #: field:calendar.event,tu:0
 #: field:calendar.todo,tu:0
 #: field:crm.meeting,tu:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_tu
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_tu
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_tu
 msgid "Tue"
 msgstr ""
 
@@ -224,6 +249,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,message_ids:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_message_ids
 msgid "Messages"
 msgstr ""
 
@@ -239,7 +265,7 @@ msgid "To"
 msgstr ""
 
 #. module: base_calendar
-#: code:addons/base_calendar/base_calendar.py:1318
+#: code:addons/base_calendar/base_calendar.py:1319
 #, python-format
 msgid "Error!"
 msgstr ""
@@ -263,6 +289,9 @@ msgstr ""
 #: field:calendar.event,recurrent_id:0
 #: field:calendar.todo,recurrent_id:0
 #: field:crm.meeting,recurrent_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_recurrent_id
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_recurrent_id
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_recurrent_id
 msgid "Recurrent ID"
 msgstr ""
 
@@ -295,6 +324,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,name:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_name
 msgid "Meeting Subject"
 msgstr ""
 
@@ -328,12 +358,17 @@ msgstr ""
 #: field:calendar.event,recurrent_id_date:0
 #: field:calendar.todo,recurrent_id_date:0
 #: field:crm.meeting,recurrent_id_date:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_recurrent_id_date
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_recurrent_id_date
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_recurrent_id_date
 msgid "Recurrent ID date"
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,event_end_date:0
 #: field:calendar.attendee,event_end_date:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_event_end_date
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_event_end_date
 msgid "Event End Date"
 msgstr ""
 
@@ -348,11 +383,11 @@ msgid "Holds the Chatter summary (number of messages, ...). This summary is dire
 msgstr ""
 
 #. module: base_calendar
-#: code:addons/base_calendar/base_calendar.py:401
-#: code:addons/base_calendar/base_calendar.py:443
+#: code:addons/base_calendar/base_calendar.py:311
+#: code:addons/base_calendar/base_calendar.py:353
 #: code:addons/base_calendar/base_calendar.py:1007
 #: code:addons/base_calendar/base_calendar.py:1009
-#: code:addons/base_calendar/base_calendar.py:1528
+#: code:addons/base_calendar/base_calendar.py:1529
 #, python-format
 msgid "Warning!"
 msgstr ""
@@ -369,18 +404,24 @@ msgstr ""
 #: field:calendar.event,count:0
 #: field:calendar.todo,count:0
 #: field:crm.meeting,count:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_repeat
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_count
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_count
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_count
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_repeat
 #: field:res.alarm,repeat:0
 msgid "Repeat"
 msgstr ""
 
 #. module: base_calendar
-#: field:calendar.event,organizer:0
-#: field:calendar.event,organizer_id:0
-#: field:calendar.todo,organizer:0
-#: field:calendar.todo,organizer_id:0
-#: field:crm.meeting,organizer:0
-#: field:crm.meeting,organizer_id:0
-msgid "Organizer"
+#: code:addons/base_calendar/base_calendar.py:461
+#, python-format
+msgid "Below are the details of event. Hours and dates expressed in %(timezone)s time."
+msgstr ""
+
+#. module: base_calendar
+#: selection:crm.meeting,state:0
+msgid "Unconfirmed"
 msgstr ""
 
 #. module: base_calendar
@@ -388,6 +429,9 @@ msgstr ""
 #: field:calendar.event,user_id:0
 #: field:calendar.todo,user_id:0
 #: field:crm.meeting,user_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_user_id
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_user_id
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_user_id
 msgid "Responsible"
 msgstr ""
 
@@ -409,6 +453,7 @@ msgstr ""
 #: selection:calendar.todo,state:0
 #: field:crm.meeting,date_open:0
 #: selection:crm.meeting,state:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_date_open
 msgid "Confirmed"
 msgstr ""
 
@@ -420,6 +465,13 @@ msgstr ""
 #: field:calendar.todo,partner_ids:0
 #: field:crm.meeting,attendee_ids:0
 #: field:crm.meeting,partner_ids:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_attendee_ids
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_attendee_ids
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_partner_ids
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_attendee_ids
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_partner_ids
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_attendee_ids
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_partner_ids
 msgid "Attendees"
 msgstr ""
 
@@ -437,11 +489,15 @@ msgstr ""
 #: field:calendar.event,su:0
 #: field:calendar.todo,su:0
 #: field:crm.meeting,su:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_su
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_su
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_su
 msgid "Sun"
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,cutype:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_cutype
 msgid "Invite Type"
 msgstr ""
 
@@ -452,6 +508,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,parent_ids:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_parent_ids
 msgid "Delegrated From"
 msgstr ""
 
@@ -464,13 +521,19 @@ msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,message_follower_ids:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_message_follower_ids
 msgid "Followers"
 msgstr ""
 
 #. module: base_calendar
+#: code:addons/base_calendar/base_calendar.py:496
 #: field:calendar.event,location:0
 #: field:calendar.todo,location:0
 #: field:crm.meeting,location:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_location
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_location
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_location
+#, python-format
 msgid "Location"
 msgstr ""
 
@@ -484,18 +547,28 @@ msgstr ""
 #: field:calendar.event,show_as:0
 #: field:calendar.todo,show_as:0
 #: field:crm.meeting,show_as:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_show_as
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_show_as
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_show_as
 msgid "Show Time as"
 msgstr ""
 
 #. module: base_calendar
 #: selection:calendar.alarm,action:0
 #: field:calendar.attendee,email:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_email
 msgid "Email"
 msgstr ""
 
 #. module: base_calendar
 #: selection:calendar.attendee,cutype:0
 msgid "Room"
+msgstr ""
+
+#. module: base_calendar
+#: code:addons/base_calendar/base_calendar.py:455
+#, python-format
+msgid "Hello,"
 msgstr ""
 
 #. module: base_calendar
@@ -516,6 +589,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,create_date:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_create_date
 msgid "Creation Date"
 msgstr ""
 
@@ -540,6 +614,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,rsvp:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_rsvp
 msgid "Required Reply?"
 msgstr ""
 
@@ -547,6 +622,9 @@ msgstr ""
 #: field:calendar.event,base_calendar_url:0
 #: field:calendar.todo,base_calendar_url:0
 #: field:crm.meeting,base_calendar_url:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_base_calendar_url
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_base_calendar_url
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_base_calendar_url
 msgid "Caldav URL"
 msgstr ""
 
@@ -571,6 +649,9 @@ msgstr ""
 #: field:calendar.event,th:0
 #: field:calendar.todo,th:0
 #: field:crm.meeting,th:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_th
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_th
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_th
 msgid "Thu"
 msgstr ""
 
@@ -581,6 +662,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,child_ids:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_child_ids
 msgid "Delegrated To"
 msgstr ""
 
@@ -607,6 +689,8 @@ msgstr ""
 #. module: base_calendar
 #: field:calendar.event,create_date:0
 #: field:calendar.todo,create_date:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_create_date
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_create_date
 msgid "Created"
 msgstr ""
 
@@ -629,11 +713,13 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,partner_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_partner_id
 msgid "Contact"
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,language:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_language
 msgid "Language"
 msgstr ""
 
@@ -641,7 +727,16 @@ msgstr ""
 #: field:calendar.event,end_date:0
 #: field:calendar.todo,end_date:0
 #: field:crm.meeting,end_date:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_end_date
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_end_date
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_end_date
 msgid "Repeat Until"
+msgstr ""
+
+#. module: base_calendar
+#: code:addons/base_calendar/base_calendar.py:503
+#, python-format
+msgid "Event Attendees"
 msgstr ""
 
 #. module: base_calendar
@@ -685,6 +780,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,categ_ids:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_categ_ids
 msgid "Tags"
 msgstr ""
 
@@ -707,6 +803,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,user_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_user_id
 msgid "Owner"
 msgstr ""
 
@@ -724,6 +821,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,cn:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_cn
 msgid "Common name"
 msgstr ""
 
@@ -733,7 +831,7 @@ msgid "Declined"
 msgstr ""
 
 #. module: base_calendar
-#: code:addons/base_calendar/base_calendar.py:1528
+#: code:addons/base_calendar/base_calendar.py:1529
 #, python-format
 msgid "Group by date is not supported, use the calendar view instead."
 msgstr ""
@@ -761,6 +859,9 @@ msgstr ""
 #: field:calendar.event,class:0
 #: field:calendar.todo,class:0
 #: field:crm.meeting,class:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_class
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_class
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_class
 msgid "Privacy"
 msgstr ""
 
@@ -773,6 +874,9 @@ msgstr ""
 #: field:calendar.event,fr:0
 #: field:calendar.todo,fr:0
 #: field:crm.meeting,fr:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_fr
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_fr
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_fr
 msgid "Fri"
 msgstr ""
 
@@ -783,6 +887,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,member:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_member
 msgid "Member"
 msgstr ""
 
@@ -797,6 +902,9 @@ msgstr ""
 #: field:calendar.event,rrule:0
 #: field:calendar.todo,rrule:0
 #: field:crm.meeting,rrule:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_rrule
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_rrule
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_rrule
 msgid "Recurrent Rule"
 msgstr ""
 
@@ -807,11 +915,13 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,attach:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_attach
 msgid "Attachment"
 msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,date_closed:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_date_closed
 msgid "Closed"
 msgstr ""
 
@@ -825,6 +935,9 @@ msgstr ""
 #: field:calendar.event,alarm_id:0
 #: field:calendar.todo,alarm_id:0
 #: field:crm.meeting,alarm_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_alarm_id
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_alarm_id
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_alarm_id
 msgid "Reminder"
 msgstr ""
 
@@ -854,6 +967,11 @@ msgstr ""
 #: field:calendar.event,state:0
 #: field:calendar.todo,state:0
 #: field:crm.meeting,state:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_state
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_state
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_state
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_state
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_state
 msgid "Status"
 msgstr ""
 
@@ -907,6 +1025,8 @@ msgstr ""
 #: field:calendar.alarm,event_date:0
 #: field:calendar.attendee,event_date:0
 #: view:calendar.event:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_event_date
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_event_date
 msgid "Event Date"
 msgstr ""
 
@@ -923,21 +1043,25 @@ msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,write_date:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_write_date
 msgid "Write Date"
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,delegated_from:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_delegated_from
 msgid "Delegated From"
 msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting,message_is_follower:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_message_is_follower
 msgid "Is a Follower"
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,user_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_user_id
 msgid "User"
 msgstr ""
 
@@ -945,11 +1069,15 @@ msgstr ""
 #: view:calendar.event:0
 #: field:calendar.event,date:0
 #: field:crm.meeting,date:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_date
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_date
 msgid "Date"
 msgstr ""
 
 #. module: base_calendar
+#: code:addons/base_calendar/base_calendar.py:479
 #: view:calendar.event:0
+#, python-format
 msgid "Start Date"
 msgstr ""
 
@@ -969,6 +1097,9 @@ msgstr ""
 #: field:calendar.event,mo:0
 #: field:calendar.todo,mo:0
 #: field:crm.meeting,mo:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_mo
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_mo
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_mo
 msgid "Mon"
 msgstr ""
 
@@ -997,6 +1128,8 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,trigger_occurs:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_trigger_occurs
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_trigger_occurs
 #: field:res.alarm,trigger_occurs:0
 msgid "Triggers"
 msgstr ""
@@ -1010,12 +1143,16 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,trigger_related:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_trigger_related
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_trigger_related
 #: field:res.alarm,trigger_related:0
 msgid "Related to"
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,trigger_interval:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_trigger_interval
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_trigger_interval
 #: field:res.alarm,trigger_interval:0
 msgid "Interval"
 msgstr ""
@@ -1031,6 +1168,8 @@ msgstr ""
 #: field:calendar.alarm,name:0
 #: view:calendar.event:0
 #: field:crm.meeting,message_summary:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_name
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_message_summary
 msgid "Summary"
 msgstr ""
 
@@ -1039,12 +1178,17 @@ msgstr ""
 #: field:calendar.event,active:0
 #: field:calendar.todo,active:0
 #: field:crm.meeting,active:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_active
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_active
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_active
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_active
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_active
 #: field:res.alarm,active:0
 msgid "Active"
 msgstr ""
 
 #. module: base_calendar
-#: code:addons/base_calendar/base_calendar.py:401
+#: code:addons/base_calendar/base_calendar.py:311
 #, python-format
 msgid "You cannot duplicate a calendar attendee."
 msgstr ""
@@ -1056,6 +1200,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,action:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_action
 msgid "Action"
 msgstr ""
 
@@ -1072,6 +1217,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,delegated_to:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_delegated_to
 msgid "Delegated To"
 msgstr ""
 
@@ -1107,12 +1253,26 @@ msgstr ""
 #: field:calendar.event,end_type:0
 #: field:calendar.todo,end_type:0
 #: field:crm.meeting,end_type:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_end_type
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_end_type
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_end_type
 msgid "Recurrence Termination"
 msgstr ""
 
 #. module: base_calendar
-#: view:crm.meeting:0
-msgid "Until"
+#: field:calendar.event,organizer:0
+#: field:calendar.event,organizer_id:0
+#: field:calendar.todo,organizer:0
+#: field:calendar.todo,organizer_id:0
+#: field:crm.meeting,organizer:0
+#: field:crm.meeting,organizer_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_organizer
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_organizer_id
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_organizer
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_organizer_id
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_organizer
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_organizer_id
+msgid "Organizer"
 msgstr ""
 
 #. module: base_calendar
@@ -1175,7 +1335,7 @@ msgid "Select Weekdays"
 msgstr ""
 
 #. module: base_calendar
-#: code:addons/base_calendar/base_calendar.py:1587
+#: code:addons/base_calendar/base_calendar.py:1588
 #: selection:calendar.attendee,availability:0
 #: selection:calendar.event,show_as:0
 #: selection:calendar.todo,show_as:0
@@ -1193,6 +1353,9 @@ msgstr ""
 #: field:calendar.event,recurrency:0
 #: field:calendar.todo,recurrency:0
 #: field:crm.meeting,recurrency:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_recurrency
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_recurrency
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_recurrency
 msgid "Recurrent"
 msgstr ""
 
@@ -1200,6 +1363,9 @@ msgstr ""
 #: field:calendar.event,rrule_type:0
 #: field:calendar.todo,rrule_type:0
 #: field:crm.meeting,rrule_type:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_rrule_type
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_rrule_type
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_rrule_type
 msgid "Recurrency"
 msgstr ""
 
@@ -1214,6 +1380,9 @@ msgstr ""
 #: field:calendar.event,exrule:0
 #: field:calendar.todo,exrule:0
 #: field:crm.meeting,exrule:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_exrule
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_exrule
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_exrule
 msgid "Exception Rule"
 msgstr ""
 
@@ -1238,6 +1407,9 @@ msgstr ""
 #: field:calendar.event,month_list:0
 #: field:calendar.todo,month_list:0
 #: field:crm.meeting,month_list:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_month_list
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_month_list
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_month_list
 msgid "Month"
 msgstr ""
 
@@ -1255,10 +1427,12 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,dir:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_dir
 msgid "URI Reference"
 msgstr ""
 
 #. module: base_calendar
+#: code:addons/base_calendar/base_calendar.py:490
 #: field:calendar.alarm,description:0
 #: view:calendar.event:0
 #: field:calendar.event,description:0
@@ -1266,6 +1440,13 @@ msgstr ""
 #: field:calendar.todo,description:0
 #: field:calendar.todo,name:0
 #: field:crm.meeting,description:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_description
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_description
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_name
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_description
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_name
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_description
+#, python-format
 msgid "Description"
 msgstr ""
 
@@ -1316,6 +1497,9 @@ msgstr ""
 #: field:calendar.event,sa:0
 #: field:calendar.todo,sa:0
 #: field:crm.meeting,sa:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_sa
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_sa
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_sa
 msgid "Sat"
 msgstr ""
 
@@ -1331,8 +1515,9 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 msgstr ""
 
 #. module: base_calendar
-#: selection:crm.meeting,state:0
-msgid "Unconfirmed"
+#: code:addons/base_calendar/base_calendar.py:519
+#, python-format
+msgid "From:"
 msgstr ""
 
 #. module: base_calendar
@@ -1341,10 +1526,15 @@ msgid "Specify the user that is acting on behalf of the calendar user"
 msgstr ""
 
 #. module: base_calendar
+#: code:addons/base_calendar/base_calendar.py:484
 #: view:calendar.event:0
 #: field:calendar.event,date_deadline:0
 #: field:calendar.todo,date_deadline:0
 #: field:crm.meeting,date_deadline:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_date_deadline
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_date_deadline
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_date_deadline
+#, python-format
 msgid "End Date"
 msgstr ""
 
@@ -1362,6 +1552,8 @@ msgstr ""
 
 #. module: base_calendar
 #: field:crm.meeting.type,name:0
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_type_name
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_name
 #: field:res.alarm,name:0
 msgid "Name"
 msgstr ""
@@ -1370,6 +1562,9 @@ msgstr ""
 #: field:calendar.event,exdate:0
 #: field:calendar.todo,exdate:0
 #: field:crm.meeting,exdate:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_exdate
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_exdate
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_exdate
 msgid "Exception Date/Times"
 msgstr ""
 
@@ -1387,11 +1582,15 @@ msgstr ""
 #: field:calendar.event,base_calendar_alarm_id:0
 #: field:calendar.todo,base_calendar_alarm_id:0
 #: field:crm.meeting,base_calendar_alarm_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_base_calendar_alarm_id
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_base_calendar_alarm_id
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_base_calendar_alarm_id
 msgid "Alarm"
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,sent_by_uid:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_sent_by_uid
 msgid "Sent By User"
 msgstr ""
 
@@ -1417,6 +1616,9 @@ msgstr ""
 #: field:calendar.event,week_list:0
 #: field:calendar.todo,week_list:0
 #: field:crm.meeting,week_list:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_week_list
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_week_list
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_week_list
 msgid "Weekday"
 msgstr ""
 
@@ -1430,17 +1632,21 @@ msgstr ""
 #: field:calendar.event,byday:0
 #: field:calendar.todo,byday:0
 #: field:crm.meeting,byday:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_byday
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_byday
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_byday
 msgid "By day"
 msgstr ""
 
 #. module: base_calendar
-#: code:addons/base_calendar/base_calendar.py:443
+#: code:addons/base_calendar/base_calendar.py:353
 #, python-format
 msgid "First you have to specify the date of the invitation."
 msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,model_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_model_id
 msgid "Model"
 msgstr ""
 
@@ -1450,9 +1656,17 @@ msgid "Audio"
 msgstr ""
 
 #. module: base_calendar
+#: view:crm.meeting:0
+msgid "Until"
+msgstr ""
+
+#. module: base_calendar
 #: field:calendar.event,id:0
 #: field:calendar.todo,id:0
 #: field:crm.meeting,id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_id
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_id
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_id
 msgid "ID"
 msgstr ""
 
@@ -1465,6 +1679,9 @@ msgstr ""
 #: field:calendar.event,select1:0
 #: field:calendar.todo,select1:0
 #: field:crm.meeting,select1:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_select1
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_select1
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_select1
 msgid "Option"
 msgstr ""
 
@@ -1475,6 +1692,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,res_id:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_res_id
 msgid "Resource ID"
 msgstr ""
 
@@ -1485,6 +1703,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,sent_by:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_sent_by
 msgid "Sent By"
 msgstr ""
 
@@ -1492,6 +1711,9 @@ msgstr ""
 #: field:calendar.event,sequence:0
 #: field:calendar.todo,sequence:0
 #: field:crm.meeting,sequence:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_sequence
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_sequence
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_sequence
 msgid "Sequence"
 msgstr ""
 
@@ -1519,6 +1741,9 @@ msgstr ""
 #: field:calendar.event,interval:0
 #: field:calendar.todo,interval:0
 #: field:crm.meeting,interval:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_interval
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_interval
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_interval
 msgid "Repeat Every"
 msgstr ""
 
@@ -1531,6 +1756,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.attendee,availability:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_attendee_availability
 msgid "Free/Busy"
 msgstr ""
 
@@ -1541,6 +1767,14 @@ msgstr ""
 #: field:calendar.todo,date:0
 #: field:calendar.todo,duration:0
 #: field:crm.meeting,duration:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_duration
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_trigger_duration
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_event_duration
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_date
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_todo_duration
+#: model:ir.model.fields,field_description:base_calendar.field_crm_meeting_duration
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_duration
+#: model:ir.model.fields,field_description:base_calendar.field_res_alarm_trigger_duration
 #: field:res.alarm,duration:0
 #: field:res.alarm,trigger_duration:0
 msgid "Duration"
@@ -1548,6 +1782,7 @@ msgstr ""
 
 #. module: base_calendar
 #: field:calendar.alarm,trigger_date:0
+#: model:ir.model.fields,field_description:base_calendar.field_calendar_alarm_trigger_date
 msgid "Trigger Date"
 msgstr ""
 

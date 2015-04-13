@@ -8,20 +8,21 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-06-07 19:36+0000\n"
-"PO-Revision-Date: 2014-01-18 14:01+0000\n"
-"Last-Translator: Ralf Hilgenstock <rh@dialoge.info>\n"
+"PO-Revision-Date: 2015-04-13 10:37+0100\n"
+"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-01-19 05:58+0000\n"
-"X-Generator: Launchpad (build 16901)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: de\n"
 
 #. module: board
 #: model:ir.actions.act_window,name:board.action_board_create
 #: model:ir.ui.menu,name:board.menu_board_create
 msgid "Create Board"
-msgstr "Dashboard erstellen"
+msgstr "Pinnwand erstellen"
 
 #. module: board
 #: view:board.create:0
@@ -38,7 +39,7 @@ msgstr "Layout zurücksetzen"
 #. module: board
 #: view:board.create:0
 msgid "Create New Dashboard"
-msgstr "Neues Dashboard anlegen"
+msgstr "Neue Pinnwand anlegen"
 
 #. module: board
 #. openerp-web
@@ -64,31 +65,31 @@ msgstr "Wollen Sie dieses Element wirklich löschen?"
 #. module: board
 #: model:ir.model,name:board.model_board_board
 msgid "Board"
-msgstr "Dashboard"
+msgstr "Pinnwand"
 
 #. module: board
 #: view:board.board:0
 #: model:ir.actions.act_window,name:board.open_board_my_dash_action
 #: model:ir.ui.menu,name:board.menu_board_my_dash
 msgid "My Dashboard"
-msgstr "Mein Dashboard"
+msgstr "Meine Pinnwand"
 
 #. module: board
 #: field:board.create,name:0
 msgid "Board Name"
-msgstr "Name des Dashboards"
+msgstr "Name der Pinnwand"
 
 #. module: board
 #: model:ir.model,name:board.model_board_create
 msgid "Board Creation"
-msgstr "Dashboard erstellen"
+msgstr "Pinnwand erstellen"
 
 #. module: board
 #. openerp-web
 #: code:addons/board/static/src/xml/board.xml:67
 #, python-format
 msgid "Add to Dashboard"
-msgstr "Zum Dashboard hinzufügen"
+msgstr "Zur Pinnwand hinzufügen"
 
 #. module: board
 #. openerp-web
@@ -117,17 +118,17 @@ msgid ""
 msgstr ""
 "<div class=\"oe_empty_custom_dashboard\">\n"
 "                  <p>\n"
-"                    <b>Ihr persönliches Dashboard ist noch "
-"unkonfiguriert,</b>\n"
+"                    <b>Ihre persönliche Pinnwand ist noch nicht eingerichtet,"
+"</b>\n"
 "                  </p><p>\n"
-"                   Um Ihren ersten Bericht auf Ihrem Dashboard zu "
-"konfiugrieren, \n"
-"                   klicken Sie auf <i>'Dashboard erstellen'</i> in den "
+"                   Um Ihren ersten Bericht auf Ihrer Pinnwand zu "
+"platzieren, \n"
+"                   klicken Sie auf <i>'Pinnwand erstellen'</i> in den "
 "erweiterten Suchoptionen.\n"
 "                  </p><p>\n"
 "                    Sie können die Daten zusätzlich noch filtern und "
 "gruppieren, bevor Sie\n"
-"                    die Auswertung zu Ihrem Dashboard hinzufügen.\n"
+"                    die Auswertung zu Ihrer Pinnwand hinzufügen.\n"
 "                  </p>\n"
 "              </div>\n"
 "            "
@@ -180,4 +181,4 @@ msgstr "oder"
 #: code:addons/board/static/src/xml/board.xml:69
 #, python-format
 msgid "Title of new dashboard item"
-msgstr "Titel des neuen Dashboards"
+msgstr "Titel der neuen Pinnwand"

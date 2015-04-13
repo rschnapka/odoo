@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 00:10+0000\n"
-"PO-Revision-Date: 2015-04-11 12:29+0100\n"
+"PO-Revision-Date: 2015-04-13 10:25+0100\n"
 "Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -437,7 +437,7 @@ msgstr "Lieferantenquittungen"
 #. module: account_voucher
 #: field:account.voucher,message_follower_ids:0
 msgid "Followers"
-msgstr "Followers"
+msgstr "Follower"
 
 #. module: account_voucher
 #: selection:account.voucher.line,type:0
@@ -496,7 +496,7 @@ msgstr "Lieferantenbuchungen öffnen"
 #. module: account_voucher
 #: model:ir.actions.act_window,name:account_voucher.action_review_voucher_list
 msgid "Vouchers Entries"
-msgstr "Quittungsbuchungen"
+msgstr "Quittungsposten"
 
 #. module: account_voucher
 #: field:account.voucher,name:0
@@ -507,7 +507,7 @@ msgstr "Memo"
 #: code:addons/account_voucher/invoice.py:34
 #, python-format
 msgid "Pay Invoice"
-msgstr "Rechnung zahlen"
+msgstr "Rechnung bezahlen"
 
 #. module: account_voucher
 #: view:account.voucher:0
@@ -733,7 +733,7 @@ msgstr "OP-Ausgleich Saldo"
 #. module: account_voucher
 #: view:account.voucher:0
 msgid "Cancel Receipt"
-msgstr "Zahlungseingang stornieren"
+msgstr "Beleg stornieren"
 
 #. module: account_voucher
 #: code:addons/account_voucher/account_voucher.py:1079
@@ -801,7 +801,7 @@ msgstr "Oktober"
 #: code:addons/account_voucher/account_voucher.py:1080
 #, python-format
 msgid "Please activate the sequence of selected journal !"
-msgstr "Bitte aktivieren Sie den Nummernkreis für das gewählte Journal !"
+msgstr "Bitte aktivieren Sie den Nummernkreis für das gewählte Journal."
 
 #. module: account_voucher
 #: selection:sale.receipt.report,month:0
@@ -945,7 +945,7 @@ msgstr "Rechnungen und ausstehende Geschäftsvorfälle"
 #. module: account_voucher
 #: field:account.voucher,currency_help_label:0
 msgid "Helping Sentence"
-msgstr "Helfender Satz"
+msgstr "Hilfestellung"
 
 #. module: account_voucher
 #: view:sale.receipt.report:0 field:sale.receipt.report,price_total:0
@@ -1012,12 +1012,12 @@ msgstr "Rechnung"
 #. module: account_voucher
 #: view:account.voucher:0
 msgid "Voucher Items"
-msgstr "Belegpositionen"
+msgstr "Quittungsposten"
 
 #. module: account_voucher
 #: view:account.statement.from.invoice.lines:0 view:account.voucher:0
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "Stornieren"
 
 #. module: account_voucher
 #: model:ir.actions.client,name:account_voucher.action_client_invoice_menu
@@ -1033,7 +1033,7 @@ msgstr "Pro-Forma"
 #. module: account_voucher
 #: view:account.voucher:0 field:account.voucher,move_ids:0
 msgid "Journal Items"
-msgstr "Journalbuchungen"
+msgstr "Journalposten"
 
 #. module: account_voucher
 #: code:addons/account_voucher/account_voucher.py:558
@@ -1096,7 +1096,7 @@ msgstr ""
 #. module: account_voucher
 #: view:account.voucher:0
 msgid "Posted Vouchers"
-msgstr "Gebuchte Belege"
+msgstr "Gebuchte Quittungen"
 
 #. module: account_voucher
 #: field:account.voucher,payment_rate:0

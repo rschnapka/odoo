@@ -252,7 +252,7 @@
         </record>
         <record model="account.tax.template" id="tax_ust_19_eu_skr04">
         <field name="chart_template_id" ref="l10n_chart_de_skr04"/>
-            <field name="name">19 % Umsatzsteuer EU Lieferung</field>
+            <field name="name">19% Umsatzsteuer EU Lieferung</field>
             <field name="description">19% USt EU</field>
             <field name="type">percent</field>
             <field name="amount">0.19</field>
@@ -270,8 +270,8 @@
         </record>
         <record model="account.tax.template" id="tax_ust_eu_skr04">
         <field name="chart_template_id" ref="l10n_chart_de_skr04"/>
-            <field name="name">Umsatzsteuer EU Lieferung</field>
-            <field name="description">USt EU</field>
+            <field name="name">7% Umsatzsteuer EU Lieferung</field>
+            <field name="description">7% USt EU</field>
             <field name="type">percent</field>
             <field name="amount">0.07</field>
             <field name="account_paid_id" ref="chart_skr04_3807"/>

@@ -33,6 +33,7 @@ import openerp
 import openerp.modules.registry
 from openerp.addons.base.ir.ir_qweb import AssetsBundle, QWebTemplateNotFound
 from openerp.modules import get_module_resource
+from openerp.service import model as service_model
 from openerp.tools import topological_sort
 from openerp.tools.translate import _
 from openerp.tools import ustr
@@ -314,7 +315,7 @@ def login_redirect():
     # built the redirect url, keeping all the query parameters of the url
     redirect_url = '%s?%s' % (request.httprequest.base_url, werkzeug.urls.url_encode(request.params))
     return """<html><head><script>
-        window.location = '%sredirect=' + encodeURIComponent("%s");
+        window.location = '%sredirect=' + encodeURIComponent("%s" + location.hash);
     </script></head></html>
     """ % (url, redirect_url)
 
@@ -450,8 +451,8 @@ def content_disposition(filename):
     version = int((request.httprequest.user_agent.version or '0').split('.')[0])
     if browser == 'msie' and version < 9:
         return "attachment; filename=%s" % escaped
-    elif browser == 'safari':
-        return u"attachment; filename=%s" % filename
+    elif browser == 'safari' and version < 537:
+        return u"attachment; filename=%s" % filename.encode('ascii', 'replace')
     else:
         return "attachment; filename*=UTF-8''%s" % escaped
 
@@ -933,7 +934,10 @@ class DataSet(http.Controller):
         if method.startswith('_'):
             raise Exception("Access Denied: Underscore prefixed methods cannot be remotely called")
 
-        return getattr(request.registry.get(model), method)(request.cr, request.uid, *args, **kwargs)
+        @service_model.check
+        def checked_call(__dbname, *args, **kwargs):
+            return getattr(request.registry.get(model), method)(request.cr, request.uid, *args, **kwargs)
+        return checked_call(request.db, *args, **kwargs)
 
     @http.route('/web/dataset/call', type='json', auth="user")
     def call(self, model, method, args, domain_id=None, context_id=None):
@@ -1086,10 +1090,14 @@ class Binary(http.Controller):
         Model = request.registry[model]
         cr, uid, context = request.cr, request.uid, request.context
         fields = [field]
+        content_type = 'application/octet-stream'
         if filename_field:
             fields.append(filename_field)
         if id:
+            fields.append('file_type')
             res = Model.read(cr, uid, [int(id)], fields, context)[0]
+            if res.get('file_type'):
+                content_type = res['file_type']
         else:
             res = Model.default_get(cr, uid, fields, context)
         filecontent = base64.b64decode(res.get(field) or '')
@@ -1099,9 +1107,10 @@ class Binary(http.Controller):
             filename = '%s_%s' % (model.replace('.', '_'), id)
             if filename_field:
                 filename = res.get(filename_field, '') or filename
-            return request.make_response(filecontent,
-                [('Content-Type', 'application/octet-stream'),
-                 ('Content-Disposition', content_disposition(filename))])
+            return request.make_response(
+                filecontent, [('Content-Type', content_type),
+                              ('Content-Disposition',
+                               content_disposition(filename))])
 
     @http.route('/web/binary/saveas_ajax', type='http', auth="public")
     @serialize_exception
@@ -1113,6 +1122,7 @@ class Binary(http.Controller):
         id = jdata.get('id', None)
         filename_field = jdata.get('filename_field', None)
         context = jdata.get('context', {})
+        content_type = 'application/octet-stream'
 
         Model = request.session.model(model)
         fields = [field]
@@ -1121,7 +1131,10 @@ class Binary(http.Controller):
         if data:
             res = {field: data, filename_field: jdata.get('filename', None)}
         elif id:
+            fields.append('file_type')
             res = Model.read([int(id)], fields, context)[0]
+            if res.get('file_type'):
+                content_type = res['file_type']
         else:
             res = Model.default_get(fields, context)
         filecontent = base64.b64decode(res.get(field) or '')
@@ -1132,9 +1145,10 @@ class Binary(http.Controller):
             filename = '%s_%s' % (model.replace('.', '_'), id)
             if filename_field:
                 filename = res.get(filename_field, '') or filename
-            return request.make_response(filecontent,
-                headers=[('Content-Type', 'application/octet-stream'),
-                        ('Content-Disposition', content_disposition(filename))],
+            return request.make_response(
+                filecontent, headers=[('Content-Type', content_type),
+                                      ('Content-Disposition',
+                                       content_disposition(filename))],
                 cookies={'fileToken': token})
 
     @http.route('/web/binary/upload', type='http', auth="user")

@@ -111,9 +111,8 @@ class account_analytic_account(osv.osv):
             return res
         if isinstance(ids, (int, long)):
             ids = [ids]
-        for id in ids:
-            elmt = self.browse(cr, uid, id, context=context)
-            res.append((id, self._get_one_full_name(elmt)))
+        for elmt in self.browse(cr, uid, ids, context=context):
+            res.append((elmt.id, self._get_one_full_name(elmt)))
         return res
 
     def _get_full_name(self, cr, uid, ids, name=None, args=None, context=None):
@@ -251,7 +250,7 @@ class account_analytic_account(osv.osv):
     _defaults = {
         'type': 'normal',
         'company_id': _default_company,
-        'code' : lambda obj, cr, uid, context: obj.pool.get('ir.sequence').get(cr, uid, 'account.analytic.account'),
+        'code' : lambda obj, cr, uid, context: obj.pool.get('ir.sequence').get(cr, uid, 'account.analytic.account', context=context),
         'state': 'open',
         'user_id': lambda self, cr, uid, ctx: uid,
         'partner_id': lambda self, cr, uid, ctx: ctx.get('partner_id', False),
